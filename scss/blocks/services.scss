@@ -1,0 +1,28 @@
+/* Service */
+
+.services {
+  padding: 90px 0;
+  
+  &__row {
+    display: flex;
+    column-gap: 30px;
+  }
+  
+  &__card {
+    
+    
+    &-img {
+      margin-bottom: 30px;
+    }
+    
+    &-title {
+      margin-bottom: 10px;
+      @include font-style(24px, 600);
+      text-transform: uppercase;
+    }
+    
+    p {
+      line-height: 2;
+    }
+  }
+}

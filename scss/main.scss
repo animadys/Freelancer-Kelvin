@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@import 'core';
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+
+@import 'blocks/header.scss';
+@import 'blocks/services.scss';
+@import 'blocks/portfolio.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/media.scss';

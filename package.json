@@ -1,0 +1,14 @@
+{
+  "name": "freelancer-profile",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "http-server ."
+    },
+    "devDependencies": {
+      "http-server": "^14.1.0"
+      },
+  "dependencies": {
+    "ig": "^0.0.5",
+    "sass": "^1.77.8"
+  }
+}
