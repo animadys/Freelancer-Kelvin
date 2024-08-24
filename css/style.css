@@ -297,7 +297,7 @@ legend {
     color: #000;
   }
   .header__nav-btn {
-    display: inline-block;
+    display: block;
     position: fixed;
     z-index: 9;
     top: 46px;
