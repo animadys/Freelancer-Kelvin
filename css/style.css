@@ -166,6 +166,7 @@ legend {
   color: #000;
   line-height: 2;
 }
+
 /* Service */
 .services {
   padding: 90px 0;
@@ -254,13 +255,14 @@ legend {
   color: #fff;
   transition: background-color 0.2s ease-in, top 0.2s ease-in;
 }
-.contacts__btn button:hover {
-  background-color: #323232;
+@media (hover: hover) {
+  .contacts__btn button:hover {
+    background-color: #323232;
+  }
 }
 .contacts__btn button:active {
   position: relative;
   top: 1px;
-  color: #000;
 }
 .contacts__social {
   display: flex;
@@ -285,7 +287,7 @@ legend {
   }
   .header__nav-btn {
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 15;
     top: 46px;
     right: 30px;
@@ -311,9 +313,6 @@ legend {
   }
   .header__nav.open .header__nav-list .header__nav-link.active {
     color: #000;
-  }
-  .header__nav.open .header__nav-btn {
-    position: fixed;
   }
   .header__menu {
     margin-bottom: 50px;
