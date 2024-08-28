@@ -273,7 +273,10 @@ legend {
   color: #828282;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1230px) {
+  .container {
+    max-width: 970px;
+  }
   .header__nav {
     display: flex;
   }
@@ -327,6 +330,9 @@ legend {
   }
 }
 @media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
   .header__content-text h1 {
     font-size: 34px;
     line-height: 1.3;

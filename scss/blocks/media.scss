@@ -1,4 +1,8 @@
-@media (max-width: 1023px) {
+@media (max-width: 1230px) {
+  
+  .container {
+    max-width: 970px;
+  }
   
   .header__nav {
     display: flex;
@@ -9,7 +13,7 @@
     
     &-btn { 
       display: block;
-      position: absolute;
+      position: fixed;
       z-index: 15;
       top: 46px;
       right: 30px;      
@@ -38,11 +42,7 @@
         }
       }
       
-    }
-    &.open &-btn {
-      position: fixed;
-    }
-    
+    } 
   }
   
 //  Header 
@@ -74,6 +74,10 @@
 }
 
 @media (max-width: 767px) {
+  
+  .container {
+    max-width: none;
+  }
   
   .header {
     
