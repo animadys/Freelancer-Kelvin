@@ -2,7 +2,9 @@ const nav = document.querySelector('#nav');
 const navBtn = document.querySelector('#nav-btn');
 const navBtnImg = document.querySelector('#nav-btn-img');
 
-navBtn.onClick = () => {
+navBtn.addEventListener('click', () => console.log('Button clicked!'))
+
+navBtn.onclick = () => {
   if (nav.classList.toggle('open')) {
     
 //    Меняет иконку кнопки на крестик, если класс "open" добавлен

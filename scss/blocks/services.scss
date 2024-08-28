@@ -6,10 +6,13 @@
   &__row {
     display: flex;
     column-gap: 30px;
+row-gap: 60px;
+    flex-wrap: wrap;
   }
   
   &__card {
-    
+    flex: 1 1 0;
+    min-width: 315px; 
     
     &-img {
       margin-bottom: 30px;
