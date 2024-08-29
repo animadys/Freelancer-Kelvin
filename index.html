@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelancer portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <!--<link rel="stylesheet" href="./css/style.css?v=1.0.22"> -->
     
-    <!-- <script src="./css/script.js"></script> -->
+    <script src="./css/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
@@ -41,7 +41,10 @@
             <p>I'm a portrait, fashion and lifestyle photographer living in New York City. During my thirteen year tenure here</p>
           </div>
           <div class="header__content-img" data-aos="fade-left">
-            <img src="./img/header/hero.png" alt="Man">
+            <picture>
+              <source media="(max-width: 799px)" src="./img/header/hero-mobile.png">
+              <img src="./img/header/hero.png" alt="Man">
+            </picture>
           </div>
         </div>
       </div>

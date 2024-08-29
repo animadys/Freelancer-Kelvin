@@ -287,8 +287,8 @@ legend {
   }
   .header__nav-btn {
     display: block;
-    position: fixed;
-    z-index: 15;
+    position: absolute;
+    z-index: 10;
     top: 46px;
     right: 30px;
   }
@@ -308,11 +308,22 @@ legend {
     font-weight: 600;
     color: #000;
   }
+  .header__nav.open .header__nav-list .header__nav-btn {
+    position: fixed;
+  }
   .header__nav.open .header__nav-list .header__nav-link {
     color: #828282;
   }
   .header__nav.open .header__nav-list .header__nav-link.active {
     color: #000;
+  }
+  .header__menu {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
   }
   .header__menu {
     margin-bottom: 50px;
@@ -324,20 +335,15 @@ legend {
   .header__content-text {
     margin-top: 0;
   }
-  .header__content-img {
-    text-align: center;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    max-width: none;
-  }
   .header__content-text h1 {
     font-size: 34px;
     line-height: 1.3;
   }
   .header__content-text span {
     font-size: 28px;
+  }
+  .header__content-img {
+    text-align: center;
   }
   .services {
     padding: 60px 0;

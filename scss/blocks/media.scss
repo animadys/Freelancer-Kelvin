@@ -13,8 +13,8 @@
     
     &-btn { 
       display: block;
-      position: fixed;
-      z-index: 15;
+      position: absolute;
+      z-index: 10;
       top: 46px;
       right: 30px;      
     }
@@ -34,6 +34,10 @@
       row-gap: 40px;
       @include font-style(34px, 600);
       
+      .header__nav-btn {
+        position: fixed;
+      }
+      
       .header__nav-link {
         color: #828282;
         
@@ -50,21 +54,22 @@
   .header {
     
     &__menu {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
     
     &__content {
-      flex-direction: column;
-      row-gap: 20px;
+      //flex-direction: column;
+      //row-gap: 20px;
       
-      &-text {
-        margin-top: 0;
+     // &-text {
+       // margin-top: 0;
       
-      }
-    
-      &-img {
-        text-align: center;
-      }
+     // }
+      
+      //&-img {
+      //  text-align: center;
+      //}
+      
     }
   
   }
@@ -81,9 +86,18 @@
   
   .header {
     
+    &__menu {
+      margin-bottom: 50px;
+    }
+    
     &__content {
       
+      flex-direction: column;
+      row-gap: 20px;
+      
       &-text {
+        
+        margin-top: 0;
         
         h1 {
           font-size: 34px;
@@ -94,6 +108,10 @@
           font-size: 28px;
         }
         
+      }
+      
+      &-img {
+        text-align: center;
       }
     }
   }
