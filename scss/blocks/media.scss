@@ -3,9 +3,14 @@
   .container {
     max-width: 970px;
   }
+
+  .nav-container {
+    max-width: 970px;
+  }
   
   .header__nav {
     display: flex;
+    padding-bottom: 9px;
     
     &-list {
       display: none;
@@ -13,10 +18,9 @@
     
     &-btn { 
       display: block;
-      position: absolute;
+      position: relative;
       z-index: 10;
-      top: 46px;
-      right: 30px;      
+           
     }
     
     &.open &-list{
@@ -53,29 +57,20 @@
   
   .header {
     
+    padding-top: 125px;
+
     &__menu {
       margin-bottom: 30px;
     }
     
     &__content {
-      //flex-direction: column;
-      //row-gap: 20px;
-      
-     // &-text {
-       // margin-top: 0;
-      
-     // }
-      
-      //&-img {
-      //  text-align: center;
-      //}
-      
+          
+      &-img {
+        text-align: center;
+      }
+
     }
-  
   }
-  
-  
-  
 }
 
 @media (max-width: 767px) {
@@ -92,6 +87,7 @@
     
     &__content {
       
+      align-items: normal;
       flex-direction: column;
       row-gap: 20px;
       
@@ -144,7 +140,7 @@
     padding: 60px 0;
     
     &__title {
-      margin-botton: 20px;
+      margin-bottom: 20px;
       
     }
     

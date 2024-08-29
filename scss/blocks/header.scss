@@ -1,14 +1,28 @@
 @import '../mixins';
 
+.nav-head {
+  background-color: $gray;
+  height: 110px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 8;
+}
+
+
+
 .header {
-  padding-top: 46px;
+  padding-top: 157px;
   background-color: $gray;
    
   &__menu {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 76px;
+    padding-top: 40px;
   }
   
   &__logo {
@@ -59,11 +73,11 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     column-gap: 30px;
     
     &-text {
       max-width: 500px;
-      margin-top: 124px;
       
       h1 {
         @include font-style(44px, 600);
